@@ -1,0 +1,36 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Public Crypto Sources API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://script.google.com/macros/s/AKfycbxHl_NJsQkOS31_S7UBf-YuRJOcmJZ3ISVlMQZCLoGlzdk4wXhO85bEa88qc9rXURgj/exec"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "getPublicCryptoSources",
+        "summary": "משיכת מקורות ציבוריים מה-API של המשתמש",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}
